@@ -1,0 +1,324 @@
+/* Image de fond pour le header avec padding */
+header{
+    background-image: url(../img/bg-contenu2.png);
+    padding: 1.25em 0 0.5em 0;
+}
+
+/* Flexbox pour aligner les éléments du formulaire de recherche */
+header form {
+    display: flex;
+    gap: 10px;
+}
+
+/* Le champ de recherche prend toute la largeur */
+header form .input-recherche{
+    width: 100%;
+}
+
+/* Style des liens de la navigation principale avec image de fond */
+.nav > li > a {
+    position: relative; 
+    background-image: url(../img/bkg_menu_demarches.jpg);
+    background-size: 100% 100%;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Sous-menu caché par défaut */
+.dropdown {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: none; 
+    z-index: 1000; 
+}
+
+/* Style des liens dans le sous-menu */
+.dropdown li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Changement de couleur au survol */
+.dropdown li a:hover {
+    background-color: #ddd;
+}
+
+/* Affiche le sous-menu au survol */
+.nav > li:hover > ul.dropdown {
+    display: block;
+}
+
+/* Style en flexbox, sans puces de liste */
+.breadcrumbs{
+    display: flex;
+    padding: 1em;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+/* Couleur spécifique pour les éléments du fil d'Ariane */
+.breadcrumbs li, .text_color{
+    color: #0e5f96;
+}
+
+/* Liens bleus et gras pour les principaux éléments */
+.breadcrumbs li a, main a, aside div>a{
+    color: #0275d8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Paramètres de base pour le body : fond blanc, texte noir, centré, et largeur minimale/maximale */
+body {
+    background-color: White;
+    color: Black;
+    text-align: center;
+    min-width: 380px;
+    max-width: 72.25rem;
+    margin: auto !important;
+}
+
+/* Suppression des puces et marges/paddings des listes */
+main ul, aside ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Suppression des marges entre les colonnes de bootstrap*/
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+/* Padding interne des colonnes principales */
+main div .col {
+    padding: 10px 20px;
+}
+
+/* Boîte avec fond gris clair et coins arrondis */
+.bg_box{
+    background-color: #f1f6f8;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Style pour les titres h1 dans le main et h3 dans la section astuces */
+main h1, .astuces h3{
+    background-color: #0e5f96;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.25em;
+}
+
+/* Taille de police pour tous les h3 */
+h3{
+    font-size: 1rem !important;
+}
+
+/* Styles pour les titres h3 dans la section actualités */
+.actualites h3{
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.25em;
+    background-color: #9c2f03;
+}
+
+/* Liens dans les sections astuces et actualités */
+.astuces a, .actualites a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Couleur orange pour les éléments spécifiques */
+.color_orange, .actualites span{
+    color: #9c2f03 !important;
+    font-weight: 600;
+}
+
+/* Couleur bleue pour des éléments spécifiques */
+.color_bleu{
+    color: #0275d8 !important;
+    font-weight: 600;
+}
+
+/* Styles pour le survol des éléments de couleur */
+.color_bleu:hover, .color_orange:hover, a:hover{
+    text-decoration: underline;
+}
+
+/* Marges horizontales de 20px */
+.m-20px{
+    margin: 0 20px;
+}
+
+/* Ombre pour les éléments avec la classe shadow_box */
+.shadow_box{
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) !important;
+}
+
+/* Marge à droite pour la classe date */
+.date {
+    margin-right: .5rem;
+}
+
+
+/* Styles principaux pour le footer */
+footer{
+    background: #008bd3 url(/web/20121209181450im_/http://www.service-public.fr/css/images-css/pied/bg.png) repeat-x left top;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+}
+
+/* Tous les éléments enfants du footer auront une couleur blanche */
+footer > * {
+    color: white;
+}
+
+/* Styles pour les listes imbriquées dans le footer */
+footer ul li ul{
+    list-style: disc;
+    margin: 0;
+    padding: 0 1rem;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Styles pour les paragraphes dans le footer */
+footer ul li p{
+    margin-bottom: 0.25rem !important;
+    font-weight: 600;
+}
+
+/* Couleur des puces dans les listes du footer */
+footer ul li::marker{
+    color: #65b7ff;
+}
+
+/* Styles pour les liens dans le footer */
+footer li a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles pour la section copyright */
+.copyright {
+    border-radius: 0 0 10px 10px;
+    background: #00327b;
+    margin-top: 14px;
+    padding: 7px 0;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+/* Styles pour les liens dans la section copyright */
+.copyright a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+
+/* Cible les écrans d'au moins 768 pixels de large */
+@media only screen and (min-width : 768px) {
+
+    /* Styles pour les éléments de navigation */
+    .nav > li {
+        position: relative;
+        list-style: none;
+    }
+    
+    /* Styles pour les menus déroulants */
+    .dropdown {
+        width: 100%;
+        position: absolute !important;
+        padding: 0;
+        margin: 0;
+        display: none; 
+        z-index: 1000;
+    }
+
+    /* Styles pour les éléments de liste dans le menu déroulant */
+    .dropdown li{
+        list-style: none;
+    }
+
+    /* Styles pour les liens dans le menu déroulant */
+    .dropdown li a {
+        text-decoration: none;
+        display: block;
+        padding: .1rem !important;
+        background-color: #f9f9f9;
+        border-bottom: none;
+        font-size: 14px;
+        color: #008bd3;
+    }
+
+    /* Styles pour les titres h1 et h3 */
+    h1,h3{
+        font-size: 1rem !important;
+        text-align: left !important;
+        padding-left: 3.5rem !important;
+    }
+
+    /* Annule la justification par défaut, Ajoute du remplissage et modifie la taille de police */
+    .breadcrumbs{
+        justify-content: unset !important;
+        padding: 1em 1rem 1rem 0rem !important;
+        font-size: 14px;
+    }
+
+    main, aside{
+        font-size: 14px;
+    }
+
+    /* Alignement à droite */
+    .color_bleu, .color_orange{
+        text-align: right !important;
+    }
+
+    /* Met en gras le texte et met une marge */
+    .text-font{
+        font-weight: 600;
+        margin-bottom: .75rem;
+    }
+
+    /* Marge gauche et droite */
+    .m-20px{
+        margin: 0 10px !important;
+    }
+
+    /* Alignement à droite */
+    .astuces div, .actualites div{
+        text-align: right;
+    }
+
+    /* Supprime les puces */
+    .nostyle{
+        list-style: none !important;
+    }
+
+    /* Styles pour les listes dans le footer */
+    footer > div > ul {
+        display: flex;
+        margin: 0;
+        list-style: none;
+    }
+}
