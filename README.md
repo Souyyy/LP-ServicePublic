@@ -37,4 +37,4 @@ Pour la mise en forme et la personnalisation de ce site, j'ai développé un **f
 
 ## Lien vers la production
 
-Vous pouvez visualiser le projet à l'adresse suivante : [https://github.com/Souyyy/LP-ServicePublic](https://github.com/Souyyy/LP-ServicePublic)
+Vous pouvez visualiser le projet à l'adresse suivante : [https://souyyy.github.io/LP-ServicePublic/](https://souyyy.github.io/LP-ServicePublic/)
