@@ -1,10 +1,12 @@
 # LP-ServicePublic
 DM CSS - Reproduction du site du service public à partir de 2 photos.
 
+Vous pouvez visualiser le projet à l'adresse suivante : [https://souyyy.github.io/LP-ServicePublic/](https://souyyy.github.io/LP-ServicePublic/)
+
 ## Présentation du projet
 
 Le DM vise à développer une page web responsive pour le tableau de bord du service public. Cette page doit être élaborée à partir de deux images : une version pour ordinateur et une autre pour téléphone afin de garantir une page responsive. Le point de départ sera un fichier HTML contenant les éléments de base du code. La conception de la page doit utiliser le framework Bootstrap pour faciliter la mise en page, la structure de la page inclura une barre de navigation, une section principale, une colonne latérale et un pied de page. 
-Vous pouvez visualiser le projet à l'adresse suivante : [https://souyyy.github.io/LP-ServicePublic/](https://souyyy.github.io/LP-ServicePublic/)
+
 ## Démarche du développement
 
 ### 1. Structure Sémantique
